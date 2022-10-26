@@ -1,0 +1,18 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class SA2dropdown {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.gecko.driver","E:\\Selenium with Java\\Drivers\\geckodriver.exe");
+		WebDriver driver=new FirefoxDriver();
+		//Dropdown
+		driver.get("https://www.rahulshettyacademy.com/dropdownsPractise/");
+		driver.findElement(By.xpath("//*[@id='divpaxinfo']")).click();
+		driver.findElement(By.xpath("//*[@id='hrefIncAdt']")).click();
+		driver.findElement(By.xpath("//*[@id='btnclosepaxoption']")).click();
+
+	}
+
+}

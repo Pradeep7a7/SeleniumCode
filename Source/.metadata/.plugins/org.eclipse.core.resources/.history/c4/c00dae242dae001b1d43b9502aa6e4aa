@@ -1,0 +1,14 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SA7EndtoEnd {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "E:\\Selenium with Java\\Drivers\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		//Spice Jet Flight Booking
+		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+
+	}
+
+}

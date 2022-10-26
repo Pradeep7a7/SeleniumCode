@@ -1,0 +1,21 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Locator2LinkText {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver","E:\\Study\\Selenium with Java\\Drivers\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		System.out.println("Test is Started");
+		driver.get("https://login.salesforce.com/");
+		driver.findElement(By.id("username")).sendKeys("kking8242@gmail.com");
+		driver.findElement(By.name("pw")).sendKeys("peepakumar");
+		driver.findElement(By.linkText("Forgot Your Password?")).click();
+		System.out.println(driver.getCurrentUrl());
+		System.out.println(driver.getTitle());
+		driver.close();
+
+	}
+
+}

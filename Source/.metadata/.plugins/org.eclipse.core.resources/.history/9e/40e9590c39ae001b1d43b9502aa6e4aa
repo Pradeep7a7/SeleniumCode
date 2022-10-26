@@ -1,0 +1,53 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
+
+public class SA7EndtoEnd {
+
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "E:\\Selenium with Java\\Drivers\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		//Spice Jet Flight Booking
+		driver.manage().window().maximize();
+		System.out.println("Automation Test Started");
+		driver.get("https://www.spicejet.com/");
+		driver.findElement(By.xpath("//input[@id='ctl00_mainContent_ddl_originStation1_CTXT']")).click();
+		driver.findElement(By.xpath("//div[@id='ctl00_mainContent_ddl_originStation1_CTNR'] //a[@value='BLR']")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//div[@id='ctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='MAA']")).click();
+		driver.findElement(By.cssSelector(".ui-datepicker-days-cell-over.ui-datepicker-current-day.ui-datepicker-today")).click();
+		WebElement from=driver.findElement(By.xpath("//*[@id='ctl00_mainContent_ddl_originStation1']"));
+		Select from1=new Select (from);
+		System.out.println(from1.getFirstSelectedOption().getText());
+		//Assert.assertEquals(driver.findElement(By.xpath("//input[@id='ctl00_mainContent_ddl_originStation1_CTXT']")).getText(), "Bengaluru (BLR)");
+		System.out.println("Value Before Selecting -"+driver.findElement(By.id("divpaxinfo")).getText());
+		driver.findElement(By.id("divpaxinfo")).click();
+		WebElement Adult=driver.findElement(By.id("ctl00_mainContent_ddl_Adult"));
+		Select Adults=new Select(Adult);
+		Adults.selectByValue("3");
+		WebElement Child=driver.findElement(By.id("ctl00_mainContent_ddl_Child"));
+		Select Childs=new Select(Child);
+		Childs.selectByValue("2");
+		WebElement Infant=driver.findElement(By.id("ctl00_mainContent_ddl_Infant"));
+		Select Infants=new Select(Infant);
+		Infants.selectByValue("1");
+		System.out.println("Value After Selecting -"+driver.findElement(By.id("divpaxinfo")).getText());
+		driver.findElement(By.id("ctl00_mainContent_DropDownListCurrency")).click();
+		System.out.println(driver.findElement(By.id("ctl00_mainContent_DropDownListCurrency")).isSelected());
+		WebElement Currency=driver.findElement(By.id("ctl00_mainContent_DropDownListCurrency"));
+		Select Curency=new Select(Currency);
+		Curency.selectByValue("USD");
+		System.out.println("Currency Value -"+Curency.getFirstSelectedOption().getText());
+		System.out.println("Checkbox count Size -"+driver.findElements(By.xpath("//input[@type='checkbox']")).size());
+		driver.findElement(By.id("ctl00_mainContent_chk_SeniorCitizenDiscount")).click();
+		driver.findElement(By.xpath("//input[@id='ctl00_mainContent_btn_FindFlights']")).click();
+		Thread.sleep(3000);
+		System.out.println("Response is -"+driver.findElement(By.xpath("//div[@class='no_flights padding-left-15']")).getText());
+		System.out.println("Automation Test Ended");
+		driver.close();
+	}
+
+}

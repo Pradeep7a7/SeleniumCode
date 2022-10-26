@@ -1,0 +1,17 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class SA3DropdownDynamic {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.gecko.driver","E:\\Selenium with Java\\Drivers\\geckodriver.exe");
+		WebDriver driver=new FirefoxDriver();
+		//Dropdown
+		driver.get("https://www.rahulshettyacademy.com/dropdownsPractise/");
+		driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click();
+		
+
+	}
+
+}

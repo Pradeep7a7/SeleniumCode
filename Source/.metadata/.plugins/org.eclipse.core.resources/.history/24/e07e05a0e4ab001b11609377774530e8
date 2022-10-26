@@ -1,0 +1,26 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class SA1Dropdown {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "E:\\Selenium with Java\\Drivers\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		//StaticDropdown
+		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+		WebElement staticdropdown= driver.findElement(By.id("dropdown-class-example"));
+		Select dropdown = new Select(staticdropdown);
+		dropdown.selectByIndex(1);
+		System.out.println(dropdown.getFirstSelectedOption().getText());
+		dropdown.selectByVisibleText("");
+		System.out.println(dropdown.getFirstSelectedOption().getText());
+		dropdown.selectByValue("");
+		System.out.println(dropdown.getFirstSelectedOption().getText());
+		driver.close();
+
+	}
+
+}
