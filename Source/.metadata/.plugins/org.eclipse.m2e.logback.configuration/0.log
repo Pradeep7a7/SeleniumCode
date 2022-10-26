@@ -12014,3 +12014,6 @@ org.eclipse.core.runtime.CoreException: Launch configuration A3frameshandling re
 2022-10-26 22:06:52,987 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Pradeep\GitStuff\Source\Basics&Locators\src\main\resources
 2022-10-26 22:06:52,989 [Worker-2: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2022-10-26 22:06:52,990 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Pradeep\GitStuff\Source\Basics&Locators\src\test\resources
+2022-10-26 22:32:53,777 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-10-26 22:33:08,906 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-26 22:33:08,908 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Pradeep\GitStuff\Source\Basics&Locators\src\main\resources
