@@ -8323,3 +8323,9 @@ org.eclipse.core.runtime.CoreException: Launch configuration A3frameshandling re
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-26 22:41:45.640
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-26 22:45:26.119
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-26 22:45:26.122
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
