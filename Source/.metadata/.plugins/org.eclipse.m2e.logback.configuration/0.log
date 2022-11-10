@@ -12264,3 +12264,7 @@ org.eclipse.core.runtime.CoreException: Launch configuration A3frameshandling re
 2022-11-10 09:41:19,538 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2022-11-10 09:41:19,539 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Pradeep\GitStuff\Source\Basics&Locators\src\main\resources
 2022-11-10 09:41:19,542 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 09:41:19,543 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Pradeep\GitStuff\Source\Basics&Locators\src\test\resources
+2022-11-10 09:50:15,095 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 09:50:15,097 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Pradeep\GitStuff\Source\Basics&Locators\src\main\resources
+2022-11-10 09:50:15,099 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
