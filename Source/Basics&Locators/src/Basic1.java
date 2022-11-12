@@ -3,7 +3,7 @@ public class Basic1 {
 
 	public static void main(String[] args) {
 		// For Printing in Output
-		System.out.println("Basic Test from Clones in new Branchs from Desktop App");
+		System.out.println("Basic Test");
 		
 		int a=3;
 		int b=2;
