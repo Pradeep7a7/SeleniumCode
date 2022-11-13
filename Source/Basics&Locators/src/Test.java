@@ -14,6 +14,7 @@ public class Test {
 		System.out.println(driver.findElement(By.linkText("+91 9886016840")));
 		// System.out.println(driver.getPageSource());
 		driver.close();
+		driver.quit();
 
 	}
 
